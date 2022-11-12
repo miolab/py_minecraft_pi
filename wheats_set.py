@@ -1,4 +1,4 @@
-"""Set wheat blocks.
+"""Set wheat area.
 """
 from mcpi.minecraft import Minecraft
 import mcpi.block as block
@@ -12,14 +12,14 @@ def main():
     # get player's position
     x, y, z = mc.player.getPos()
 
-    # set TNT block
+    # set WHEAT
     mc.setBlocks(
         x + 1,
         y + 1,
         z + 1,
-        x + 15,
+        x + 3,
         y + 1,
-        z + 15,
+        z + 3,
         # WHEAT_ID=296
         block.WHEAT.id
     )
