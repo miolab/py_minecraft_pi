@@ -1,5 +1,5 @@
-"""Set wheat area.
-- ref: http://konbu-coupe.sakura.ne.jp/recipe/recipe/1/0/296.html
+"""Set wheat seeds.
+- ref: http://konbu-coupe.sakura.ne.jp/recipe/recipe/1/0/295.html
 """
 from mcpi.minecraft import Minecraft
 import mcpi.block as block
@@ -13,7 +13,7 @@ def main():
     # get player's position
     x, y, z = mc.player.getPos()
 
-    # set WHEAT
+    # set Wheet Seeds
     mc.setBlocks(
         x + 1,
         y + 1,
@@ -21,8 +21,8 @@ def main():
         x + 3,
         y + 1,
         z + 3,
-        # NOTE: WHEAT_ID=296
-        block.WHEAT.id
+        # NOTE: WHEAT_SEEDS_ID=295
+        block.WHEAT_SEEDS.id
     )
 
 
